@@ -28,7 +28,7 @@ img {
   color: #454546;
   font-family: "Poppins";
 }
-.main-header__container{
+.main-logo{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,6 +106,9 @@ img {
 marquee{
   margin-top: 20px;
   font-size: 20px;
+}
+.tipo{
+  color:green;
 }
 /* ESTILOS DE SLIDER */
 .container-slider{
