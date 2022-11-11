@@ -8,9 +8,71 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            opacity: 0.8;
+            background-image:  radial-gradient(#fb004c 0.5px, transparent 0.5px), radial-gradient(#fb004c 0.5px, #e8e8e8 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+            /* height: 100vh; */
+        }
+        .contenedor {
+            width: 90%;
+            max-width: 600px;
+        }
+        .logo-containerss {
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            /* background-color: yellow; */
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+        }
+        .logo {
+            width: 200px;
+            /* background-color: red; */
+            margin-top: -30px;
+        }
+        .form {
+            margin-top: -30px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container contenedor">
+        <div class="row">
+            <div class="logo-container">
+                <img class="logo"src="img/Logo_vacomishop.png" alt="Logotipo">
+            </div>
+        </div>
+        <form class="form">
+            <h2 class="form__title text-center">Inicia Sesión</h2>
+            <p class="form__paragraph text-center">¿Aún no tienes una cuenta?
+                <a class="form__link" href="#">Registrate Aquí</a>
+            </p>
+
+            <div class="form__container">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPassword" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword"required>
+                  </div>
+
+                  <div class="mt-5 d-grid">
+                    <input type="submit" class="btn btn-danger" value="Ingresar">
+                  </div>
+            </div>
+        </form>
+    </div>
 
 
     <!-- JavaScript Bundle with Popper -->
